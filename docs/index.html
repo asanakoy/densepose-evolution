@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Transferring Dense Pose to Proximal Animal Classes.">
+    <meta name="author" content="Artsiom Sanakoyeu">
+
+    <title>Transferring Dense Pose to Proximal Animal Classes</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="index_files/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="index_files/font-awesome.html" rel="stylesheet" type="text/css">
+    <link href="index_files/css.css" rel="stylesheet" type="text/css">
+    <link href="index_files/css_002.css" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="index_files/magnific-popup.html" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="index_files/creative.css" rel="stylesheet">
+    <link href="index_files/footer.css" rel="stylesheet">
+    <link href="index_files/academicons.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+
+
+    <section class="bg-dark" style="padding: 1em">
+      </section>
+
+    <section class="container" id="body">
+      <div class="container">
+        <center>
+          <hr class="light my-4">
+          <h2 class="section-heading mb-3" style="color: #343a40; font-size: calc(20px + 0.8vw);"><b>Transferring Dense Pose to Proximal Animal Classes</b></h2>
+          <h3 class="text-dark mb-4" style="font-size: calc(15px + 0.6vw);"><a href="https://arxiv.org/abs/TODO" style="color: #343a40;"> arXiv preprint</a></h3>
+          <div class="row mb-2">
+            <!-- <div class="col-md-1"></div> -->
+            <div class="col-auto col-md-3" style="margin: 0 auto;">
+              <p class="text-dark mb-1"><a href="http://asanakoy.github.io" style="color: #343a40; font-size: calc(10px + 0.8vw);">Artsiom Sanakoyeu<sup>1*</sup></a></p>
+            </div>
+            <div class="col-auto col-md-3" style="margin: 0 auto;">
+              <p class="text-dark mb-1"><a href="https://research.fb.com/people/khalidov-vasil/" style="color: #343a40; font-size: calc(10px + 0.8vw);">Vasil Khalidov<sup>2</sup></a></p>
+            </div>
+            <div class="col-auto col-md-3" style="margin: 0 auto;">
+              <p class="text-dark mb-1"><a href="https://www.maureenmccarthyphd.com/" style="color: #343a40; font-size: calc(10px + 0.8vw);">Maureen S. McCarthy<sup>3</sup></a></p>
+            </div>
+            <div class="col-auto col-md-3" style="margin: 0 auto;">
+              <p class="text-dark mb-1"><a href="https://www.robots.ox.ac.uk/~vedaldi/" style="color: #343a40; font-size: calc(10px + 0.8vw);">Andrea Vedaldi<sup>2</sup></a></p>
+            </div>
+            <div class="col-auto col-md-3" style="margin: 0 auto;">
+              <p class="text-dark mb-1"><a href="https://nneverova.github.io/" style="color: #343a40; font-size: calc(10px + 0.8vw);">Natalia Neverova<sup>2</sup></a></p>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+
+          <p></p>
+
+          <!-- <div class="row mb-2"> -->
+            <center>
+                <div style="margin: 0 auto;">
+                    <p class="text-dark mb-1" style="color: #343a40; font-size: calc(10px + 0.4vw);"><sup>*</sup>Done during an internship at FAIR.</p>
+                </div>
+            </center>
+            <!-- <div class="col-md-1"></div> -->
+
+            <div class="row mb-2">
+                <!-- <div class="col-md-1"></div> -->
+               <div class="col-auto col-md-3" style="margin: 0 auto;">
+                  <p class="text-dark mb-1"><a href="https://hci.iwr.uni-heidelberg.de/COMPVIS/" style="color: #343a40; font-size: calc(10px + 0.4vw);"><sup>1</sup>Heidelberg University</a></p>
+                </div>
+                <div class="col-auto col-md-3" style="margin: 0 auto;">
+                  <p class="text-dark mb-1"><a href="https://ai.facebook.com/" style="color: #343a40; font-size: calc(10px + 0.4vw);"><sup>2</sup>Facebook AI Research (FAIR)</a></p>
+                </div>
+                <div class="col-auto col-md-3" style="margin: 0 auto;">
+                  <p class="text-dark mb-1"><a href="http://todo" style="color: #343a40; font-size: calc(10px + 0.4vw);"><sup>3</sup>MPI for Evolutionary Anthropology</a></p>
+                </div>
+              </div>
+            
+          <!-- </div> -->
+
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <!-- <iframe width="960" height="540" src="" style="max-width: 100%" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+              <img style="max-width: 100%" src="index_files/teaser.png">
+              <p class="text-dark mb-4" style="font-size: calc(10px + 0.2vw);"><b>Pipeline:</b>  We consider the problem of dense pose labelling in animal classes. We show that, for proximal to humans classes such as chimpanzees (left), we can obtain excellent performance by learning an integrated recognition architecture from existing data sources, including DensePose for humans as well as detection and segmentation information from other COCO classes (right).
+    The key is to establish a common reference (middle), which we obtain via alignment of the reference models of the animals.
+    This enables training a model for the target class without having to label a single example image for it.</p>
+
+              <hr class="light my-3">
+              <p class="text-dark mb-1" style="font-size: calc(15px + 0.6vw);">Abstract</p>
+              <p class="text-dark mb-4" style="font-size: calc(10px + 0.4vw);" align="justify">
+                  Recent contributions have demonstrated that it is possible to recognize the pose of  humans densely and accurately given a large dataset of poses annotated in detail. In principle, the same approach could be extended to any animal class, but the effort required for collecting new annotations for each case makes this strategy impractical, despite important applications in natural conservation, science and business. We show that, at least for proximal animal classes such as chimpanzees, it is possible to transfer the knowledge existing in dense pose recognition for humans, as well as in more general object detectors and segmenters, to the problem of dense pose recognition in other classes. We do this by (1) establishing a DensePose model for the new animal which is also geometrically aligned to humans (2) introducing a multi-head R-CNN architecture that facilitates transfer of multiple recognition tasks between classes, (3) finding which combination of known classes can be transferred most effectively to the new animal and (4) using self-calibrated uncertainty heads to generate pseudo-labels graded by quality for training a model for this class. We also introduce two benchmark datasets labelled in the manner of DensePose for the class chimpanzee and use them to evaluate our approach, showing excellent transfer learning performance.
+              </p>
+
+              <hr class="light my-3">
+              <p class="text-dark mb-3" style="font-size: calc(15px + 0.6vw);"><bf>Results</bf></p>
+
+              <p class="text-dark" style="font-size: calc(12px + 0.48vw);">Predicted body part segmentation and uv-maps.</p>
+                <p class="text-dark" style="font-size: calc(12px + 0.2vw);"> Visual results: <bf>(left)</bf> teacher network predictions vs <bf>(right)</bf> predictions of student network trained using I-sampling. The Student produces more accurate boundaries and uv-maps. Zoom-in for details.</p>
+              <center>
+                  
+                      <img src="index_files/colorful.png" style="max-width: 100%; margin: auto;">
+                  
+              </center>
+              <hr class="light my-3">
+
+
+              <hr class="light my-3">
+              <p class="text-dark mb-1" style="font-size: calc(15px + 0.6vw);">Citation</p>
+              <code class="codebox"><pre>@misc{DenseposeEvo20,
+  author={Artsiom Sanakoyeu and Vasil Khalidov and Maureen S. McCarthy and Andrea Vedaldi and Natalia Neverova},
+  title={Transferring Dense Pose to Proximal Animal Classes},
+  year={2020},
+  eprint={TODO},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
+}</pre></code>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+
+        </center>
+      </div>
+    </section>
+
+    <section class="bg-dark" style="padding: 1em">
+        <center>
+          <div class="footer-social-icons">
+            <ul class="social-icons">
+               <!-- <li><a href="https://github.com/asanakoy" title="GitHub" class="social-icon sr-button" style="font-size: 2em; color:#fff;"> <i class="fa fa-github"></i></a></li>  -->
+            </ul>
+          </div>
+        </center>
+      </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="index_files/jquery_002.html"></script>
+    <script src="index_files/bootstrap.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="index_files/jquery_003.html"></script>
+    <script src="index_files/scrollreveal.html"></script>
+    <script src="index_files/jquery.html"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="index_files/creative.js"></script>
+
+  
+
+
+</body></html>
