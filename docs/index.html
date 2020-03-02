@@ -97,15 +97,20 @@
 
               <hr class="light my-3">
               <p class="text-dark mb-1" style="font-size: calc(15px + 0.6vw);">Abstract</p>
-              <p class="text-dark mb-4" style="font-size: calc(10px + 0.4vw);" align="justify">
+              <p class="text-dark mb-4" style="font-size: calc(10px + 0.2vw);" align="justify">
                   Recent contributions have demonstrated that it is possible to recognize the pose of  humans densely and accurately given a large dataset of poses annotated in detail. In principle, the same approach could be extended to any animal class, but the effort required for collecting new annotations for each case makes this strategy impractical, despite important applications in natural conservation, science and business. We show that, at least for proximal animal classes such as chimpanzees, it is possible to transfer the knowledge existing in dense pose recognition for humans, as well as in more general object detectors and segmenters, to the problem of dense pose recognition in other classes. We do this by (1) establishing a DensePose model for the new animal which is also geometrically aligned to humans (2) introducing a multi-head R-CNN architecture that facilitates transfer of multiple recognition tasks between classes, (3) finding which combination of known classes can be transferred most effectively to the new animal and (4) using self-calibrated uncertainty heads to generate pseudo-labels graded by quality for training a model for this class. We also introduce two benchmark datasets labelled in the manner of DensePose for the class chimpanzee and use them to evaluate our approach, showing excellent transfer learning performance.
               </p>
 
               <hr class="light my-3">
               <p class="text-dark mb-3" style="font-size: calc(15px + 0.6vw);"><bf>Results</bf></p>
+                
+              <p class="text-dark" style="font-size: calc(12px + 0.48vw);">Predicted body part segmentation and uv-maps</p>
+              <p>
+               <iframe width="720" height="250" src="https://www.youtube.com/embed/OU3Ayg_l4QM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </p>
+                
 
-              <p class="text-dark" style="font-size: calc(12px + 0.48vw);">Predicted body part segmentation and uv-maps.</p>
-                <p class="text-dark" style="font-size: calc(12px + 0.2vw);"> Visual results: <bf>(left)</bf> teacher network predictions vs <bf>(right)</bf> predictions of student network trained using I-sampling. The Student produces more accurate boundaries and uv-maps. Zoom-in for details.</p>
+                <p class="text-dark" style="font-size: calc(12px + 0.2vw);"> Visual results: <b>(left)</b> <i>teacher</i> network predictions vs <b>(right)</b> predictions of <i>student</i> network trained using I-sampling. The <i>student</i> produces more accurate boundaries and uv-maps. Zoom-in for details.</p>
               <center>
                   
                       <img src="index_files/colorful.png" style="max-width: 100%; margin: auto;">
