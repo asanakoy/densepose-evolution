@@ -2,4 +2,7 @@
 **Artsiom Sanakoyeu, Vasil Khalidov, Maureen S. McCarthy, Andrea Vedaldi, Natalia Neverova**,
 ***In CVPR 2020*** 
 
-*Source code will be released in June*
+
+**[Project page]**: https://asanakoy.github.io/densepose-evolution/
+
+**[Source code]**: *will be released in June*
