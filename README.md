@@ -5,4 +5,4 @@
 
 **[Project page]**: https://asanakoy.github.io/densepose-evolution/
 
-**[Source code]**: *will be released in June*
+**[Source code]**: https://github.com/facebookresearch/detectron2/tree/master/projects/DensePose
